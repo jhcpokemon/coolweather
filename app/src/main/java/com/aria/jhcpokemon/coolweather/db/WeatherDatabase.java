@@ -24,14 +24,14 @@ public class WeatherDatabase {
         WeatherOpenHelper dbHelper = new WeatherOpenHelper(context,DB_NAME,null,VERSION);
         db = dbHelper.getWritableDatabase();
     }
-    /**»ñÈ¡WeatherDatabaseÊµÀı*/
+    /**è·å–WeatherDatabaseå®ä¾‹*/
     public synchronized static WeatherDatabase getInstance(Context context){
         if(weatherDB == null){
             weatherDB = new WeatherDatabase(context);
         }
         return weatherDB;
     }
-    /**´æ´¢Province*/
+    /**å­˜å‚¨Province*/
     public void saveProvince(Province province){
         if(province != null){
             ContentValues values = new ContentValues();
