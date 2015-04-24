@@ -3,4 +3,6 @@
     <string name="china">中国</string>
     <string name="fail">加载失败</string>
     <string name="loading">加载中</string>
+    <string name="split">~</string>
+    <string name="sync">同步中......</string>
 </resources>
