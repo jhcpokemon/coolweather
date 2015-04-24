@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.aria.jhcpokemon.coolweather.R;
 
+import service.AutoUpdateService;
 import util.HttpCallBackListener;
 import util.HttpUtil;
 import util.Utility;
@@ -54,6 +55,8 @@ public class WeatherActivity extends Activity {
         }else {
             showWeather();
         }
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
         switch_city.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
